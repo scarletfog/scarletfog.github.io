@@ -1,0 +1,628 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100');
+
+
+* {
+  box-sizing: border-box;
+  
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto Slab', serif;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.blink_me {
+  animation: blinker 9s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+h1 {
+  font-weight: 100;
+}
+
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+header {
+  background-color: #E2E2E2;
+  height: 95px;
+  background-color: rgba(0.0.0 0.5);
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+header>nav>ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+header>nav>ul>li {
+  display: inline-block;
+}
+
+header>nav>ul>li>a {
+  line-height: 95px;
+  display: block;
+  color: #1C0F13;
+  padding: 0 20px;
+  text-decoration: none;
+  background-position: 50% 50%;
+  border-color: rgba(0, 0, 0, 0);
+  width: 200px;
+  -webkit-transition: 0.4s ease;
+  -moz-transition: 0.4s ease;
+  -ms-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+header>nav>ul>li>a:hover {
+  box-shadow: inset 0px -15px 0px -5px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: inset 0px -15px 0px -5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 0px -15px 0px -5px rgba(0, 0, 0, 0.5);
+}
+
+.hero {
+  background: url('C:/Users/Scarlet-Fog/Desktop/scarletfog.github.io/img/coffee.jpeg') 0/cover;
+  position: relative;
+  height: calc(100vh - 95px);
+}
+
+.slogan {
+  background: rgba(0, 0, 0, 0.5);
+  max-width: 1200px;
+  text-align: center;
+  padding: 15px;
+  border-radius: 15px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+
+.slogan p {
+  color: #FFF;
+  padding: 0;
+  margin: 0;
+}
+
+
+/*GRID*/
+
+[class*="col-"] {
+  width: 100%;
+  padding: 12px;
+  float: left;
+}
+
+
+/*MEDIA*/
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  /* For tablets: */
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  /* For desktop: */
+  .col-m-1 {
+    width: 8.33%;
+  }
+  .col-m-2 {
+    width: 16.66%;
+  }
+  .col-m-3 {
+    width: 25%;
+  }
+  .col-m-4 {
+    width: 33.33%;
+  }
+  .col-m-5 {
+    width: 41.66%;
+  }
+  .col-m-6 {
+    width: 50%;
+  }
+  .col-m-7 {
+    width: 58.33%;
+  }
+  .col-m-8 {
+    width: 66.66%;
+  }
+  .col-m-9 {
+    width: 75%;
+  }
+  .col-m-10 {
+    width: 83.33%;
+  }
+  .col-m-11 {
+    width: 91.66%;
+  }
+  .col-m-12 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  /* For large screens: */
+  .col-l-1 {
+    width: 8.33%;
+  }
+  .col-l-2 {
+    width: 16.66%;
+  }
+  .col-l-3 {
+    width: 25%;
+  }
+  .col-l-4 {
+    width: 33.33%;
+  }
+  .col-l-5 {
+    width: 41.66%;
+  }
+  .col-l-6 {
+    width: 50%;
+  }
+  .col-l-7 {
+    width: 58.33%;
+  }
+  .col-l-8 {
+    width: 66.66%;
+  }
+  .col-l-9 {
+    width: 75%;
+  }
+  .col-l-10 {
+    width: 83.33%;
+  }
+  .col-l-11 {
+    width: 91.66%;
+  }
+  .col-l-12 {
+    width: 100%;
+  }
+}
+
+.skills {
+  text-align: center;
+  padding: 30px;
+  margin-bottom: 0;
+}
+
+.portfolio {
+  text-align: center;
+  background: #bcbcbc;
+  margin: 0;
+}
+
+.portfolio h2 {
+  margin: 0;
+  padding: 50px;
+}
+
+
+
+
+
+.visit {
+  display: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: black;
+  padding: 10px;
+}
+
+.col-m-4.bootstrap:hover .visit {
+  z-index: 5;
+  display: block;
+}
+
+.col-m-4.rwd:hover .visit {
+  z-index: 5;
+  display: block;
+}
+
+.col-m-4.qumachine:hover .visit {
+  z-index: 5;
+  display: block;
+}
+
+.col-m-4.bootstrap:hover .visit {
+  z-index: 5;
+  display: block;
+}
+
+.col-m-4.kanban:hover .visit {
+  z-index: 5;
+  display: block;
+}
+
+.col-m-4.slider:hover .visit {
+  z-index: 5;
+  display: block;
+}
+
+.col-m-4.rock:hover .visit {
+  z-index: 5;
+  display: block;
+}
+
+
+
+.col-m-4 img {
+  width: 500px;
+}
+
+.skills img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 20px;
+}
+
+.row.skills {
+  background-color: #E2E2E2;
+}
+
+.container.row.contact {
+  background: #D1C6C2;
+  text-align: center;
+}
+
+.container.row.contact i.fa {
+  font-size: 60px;
+  padding: 50px;
+  -webkit-transition: 0.7s ease;
+  -moz-transition: 0.7s ease;
+  -ms-transition: 0.7s ease;
+  -o-transition: 0.7s ease;
+  transition: 0.7s ease;
+}
+
+.contact a {
+  color: #000;
+  text-decoration: none;
+}
+
+.contact a:visited {
+  color: #000;
+}
+
+.container.row.contact i.fa:hover {
+  color: white;
+}
+
+footer p{
+  height: 30px;
+  background: #E2E2E2;
+  font-size: 20px;
+  margin: 0;
+  text-align: center;
+  font-family: Palatino;
+  color: #bcbcbc;
+}
+
+
+
+/*BURGER TESTOWY*/
+
+ul.topnav li.icon {
+  display: none;
+}
+
+@media screen and (max-width:768px) {
+  ul.topnav li:not(:first-child) {
+    display: none;
+  }
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+  header>nav>ul>li>a:hover {
+    box-shadow: none;
+  }
+  li:first-child {
+    padding: 0;
+    float: left;
+    line-height: 0;
+    margin: 0;
+    width: 0;
+  }
+  nav {
+    height: 600px;
+  }
+  
+  header {
+    height: 80px;
+  }
+  
+  header>nav>ul>li>a {
+    line-height: 80px;
+    width: 100px;
+  }
+  
+  .container.slogan.star {
+   padding: 0;
+   max-height: 200px;
+    font-size: 15px;
+  }
+  
+  footer {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  
+  .topnav {
+    font-size: 20px;
+  }
+  
+  ul.topnav.responsive {
+    position: relative;
+    z-index: 6;
+    background-color: #E2E2E2;
+  }
+  
+  .fa.fa-coffee.blink_me {
+    display: none;
+  }
+  
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+ .fa.fa-coffee.blink_me {
+    display: none;
+  }
+  .topnav {
+    font-size: 22px;
+    padding: 10px;
+  }
+}
+
+
+/*MEDIA FOR HERO*/
+
+@media screen and (max-width: 768px) {
+  .hero .row {
+    /*heigth: 500px;*/
+    font-size: 20px;
+  }
+  .slogan {
+    height: 400px;
+    font-size: 20px;
+  }
+  
+  .skills {
+    font-size: 20px;
+  }
+  
+  .portfolio {
+    font-size: 20px;
+  }
+  
+  .contact {
+    font-size: 20px;
+  }
+  .visit {
+  display: block;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: black;
+  padding: 10px;
+}
+  
+}
+
+
+/*BGS*/
+
+.bootstrap {
+  background: url(http://orig13.deviantart.net/9f1e/f/2016/300/5/7/bootstrap_by_scarlet_fog-damf3p3.jpg) 0/cover;
+  height: 300px;
+  background-size: auto 150%;
+  -moz-transition: all .5s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  background-position: center center;
+  position: relative;
+}
+
+.bootstrap:hover {
+  opacity: 0.5;
+  cursor: pointer;
+  background-size: auto 100%;
+}
+
+.qumachine {
+  background: url(http://orig07.deviantart.net/0299/f/2016/299/b/3/machineeq_by_scarlet_fog-dambezs.jpg) 0/cover;
+  height: 300px;
+  background-size: auto 150%;
+  -moz-transition: all .5s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  background-position: center center;
+  position: relative;
+}
+
+.qumachine:hover {
+  opacity: 0.5;
+  cursor: pointer;
+  background-size: auto 100%;
+}
+
+
+.rwd {
+  background: url(http://orig15.deviantart.net/bbc0/f/2016/300/6/b/rwdddd_by_scarlet_fog-damf4uv.jpg) 0/cover;
+  height: 300px;
+  background-size: auto 150%;
+  -moz-transition: all .5s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  background-position: center center;
+  position: relative;
+}
+
+.rwd:hover {
+  opacity: 0.5;
+  cursor: pointer;
+  background-size: auto 100%;
+}
+
+.kanban {
+  background: url(http://orig03.deviantart.net/9ef5/f/2016/299/9/6/tablicak_by_scarlet_fog-dambez7.jpg) 0/cover;
+  height: 300px;
+  background-size: auto 150%;
+  -moz-transition: all .5s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  background-position: center center;
+  position: relative;
+}
+
+.kanban:hover {
+  opacity: 0.5;
+  cursor: pointer;
+  background-size: auto 100%;
+}
+
+
+
+.slider {
+  background: url(http://orig06.deviantart.net/1bb5/f/2016/300/4/4/slider_test_by_scarlet_fog-damf5is.jpg) 0/cover;
+  height: 300px;
+  background-size: auto 150%;
+  -moz-transition: all .5s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  background-position: center center;
+  position: relative;
+}
+
+.slider:hover {
+  opacity: 0.5;
+  cursor: pointer;
+  background-size: auto 100%;
+}
+
+.rock {
+  background: url(http://images.cryhavok.org/d/13879-1/Paper+Scissors+Rock.jpg) 0/cover;
+  height: 300px;
+  background-size: auto 150%;
+  -moz-transition: all .5s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  background-position: center center;
+  position: relative;
+}
+
+.rock:hover {
+  opacity: 0.5;
+  cursor: pointer;
+  background-size: auto 100%;
+}
+
+.rock a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+
+/*FADE  IN CSS FILE*/
+
+.star {
+  transition: opacity 2.5s;
+  opacity: 0;
+}
+
+.fadeIn {
+  opacity: 1;
+}
