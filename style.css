@@ -466,7 +466,7 @@ ul.topnav li.icon {
 
 @media screen and (max-width: 768px) {
   .hero .row {
-    heigth: 500px;
+    /*heigth: 500px;*/
     font-size: 20px;
   }
   .slogan {
@@ -505,7 +505,7 @@ ul.topnav li.icon {
 /*BGS*/
 
 .bootstrap {
-  background: url('..img/bootstrap.jpeg') 0/cover;
+  background: url(http://orig13.deviantart.net/9f1e/f/2016/300/5/7/bootstrap_by_scarlet_fog-damf3p3.jpg) 0/cover;
   height: 300px;
   background-size: auto 150%;
   -moz-transition: all .5s;
@@ -522,7 +522,7 @@ ul.topnav li.icon {
 }
 
 .qumachine {
-  background: url('') 0/cover;
+  background: url(http://orig07.deviantart.net/0299/f/2016/299/b/3/machineeq_by_scarlet_fog-dambezs.jpg) 0/cover;
   height: 300px;
   background-size: auto 150%;
   -moz-transition: all .5s;
@@ -540,7 +540,7 @@ ul.topnav li.icon {
 
 
 .rwd {
-  background: url('') 0/cover;
+  background: url(http://orig15.deviantart.net/bbc0/f/2016/300/6/b/rwdddd_by_scarlet_fog-damf4uv.jpg) 0/cover;
   height: 300px;
   background-size: auto 150%;
   -moz-transition: all .5s;
@@ -557,7 +557,7 @@ ul.topnav li.icon {
 }
 
 .kanban {
-  background: url('') 0/cover;
+  background: url(http://orig03.deviantart.net/9ef5/f/2016/299/9/6/tablicak_by_scarlet_fog-dambez7.jpg) 0/cover;
   height: 300px;
   background-size: auto 150%;
   -moz-transition: all .5s;
@@ -576,7 +576,7 @@ ul.topnav li.icon {
 
 
 .slider {
-  background: url('') 0/cover;
+  background: url(http://orig06.deviantart.net/1bb5/f/2016/300/4/4/slider_test_by_scarlet_fog-damf5is.jpg) 0/cover;
   height: 300px;
   background-size: auto 150%;
   -moz-transition: all .5s;
@@ -593,7 +593,7 @@ ul.topnav li.icon {
 }
 
 .rock {
-  background: url('') 0/cover;
+  background: url(http://images.cryhavok.org/d/13879-1/Paper+Scissors+Rock.jpg) 0/cover;
   height: 300px;
   background-size: auto 150%;
   -moz-transition: all .5s;
