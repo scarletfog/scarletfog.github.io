@@ -85,7 +85,7 @@ header>nav>ul>li>a:hover {
 }
 
 .hero {
-  background: url('C:/Users/Scarlet-Fog/Desktop/scarletfog.github.io/img/coffee.jpeg') 0/cover;
+  background: url(https://static.pexels.com/photos/131893/pexels-photo-131893.jpeg) 0/cover;
   position: relative;
   height: calc(100vh - 95px);
 }
@@ -466,7 +466,7 @@ ul.topnav li.icon {
 
 @media screen and (max-width: 768px) {
   .hero .row {
-    /*heigth: 500px;*/
+    heigth: 500px;
     font-size: 20px;
   }
   .slogan {
